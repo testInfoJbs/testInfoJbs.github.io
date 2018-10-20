@@ -14,7 +14,7 @@ request.send();
 */
 
 var PdfReader = require("pdfreader").PdfReader;
-new PdfReader().parseFileItems("sample.pdf", function(err, item){
+new PdfReader().parseFileItems("/Downloads/letra.pdf", function(err, item){
   if (item && item.text)
     console.log(item.text);
 });
